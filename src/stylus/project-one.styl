@@ -1,0 +1,64 @@
+
+$project-body = linear-gradient(to right, bisque 50%, tan 50%)
+$project-border = linear-gradient(to right, floralwhite, floralwhite)
+
+#project-one
+    background-color: goldenrod
+
+    div
+        width: 350px
+        height: 250px
+        background-image: $project-body, // body
+                      $project-body, // step 1
+                      $project-body, // step 2
+                      $project-body, // step 3
+                      radial-gradient(ellipse at top left, transparent 40px, bisque 40px), // left curve
+                      radial-gradient(ellipse at top right, transparent 40px, tan 40px),  // right curve
+                      radial-gradient(ellipse at top left, transparent 40px, floralwhite 40px), // left curve border
+                      radial-gradient(ellipse at top right, transparent 40px, floralwhite 40px), // right curve border
+                      $project-border,  // body border
+                      $project-border,  // step 1 border
+                      $project-border,  // step 2 border
+                      $project-border,   // step 3 border,
+                      radial-gradient(circle, floralwhite 35px, transparent 35px) // circle border
+        
+        background-size: 330px 120px,   // body
+                     220px 18px,    // step 1
+                     180px 10px,    // step 2
+                     90px 50px,     // step 3
+                     120px 75px,    // left curve
+                     120px 75px,    // right curve
+                     120px 75px,    // left curve border
+                     120px 75px,    // right border
+                     340px 130px,   // body border
+                     230px 28px,    // step 1 border
+                     190px 20px,    // step 2 border
+                     100px 60px,    // step 3 border
+                     100px 100px    // circle border
+        
+        background-position: 10px 100px,  // body
+                         65px 85px,   // step 1
+                         85px 76px,   // step 2
+                         130px 50px,   // step 3
+                         92px 52px,     // left curve
+                         138px 52px,    // right curve
+                         88px 48px,     // left curve border
+                         142px 48px,    // right curve border
+                         5px 95px,      // body border
+                         60px 80px,     // step 1 border
+                         80px 71px,     // step 2 border
+                         125px 45px,    // step 3 border
+                         125px 3px      // circle border
+        
+        &:before
+            width: 60px
+            height: 80px
+            left: 50%
+            top: 23px
+            border-radius: 30px 30px 0 0
+            background: linear-gradient(to right, bisque 50%, tan 50%)
+            box-shadow:     2px 128px 0 -11px rgba(205,133,63,.3),
+                            0   126px 0 -9px rgba(63,22,16,.6),
+                            -58px  55px 0 -26px darken(bisque,3%),
+                            -60px  53px 0 -24px tan
+                            

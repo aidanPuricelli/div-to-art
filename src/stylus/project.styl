@@ -1,0 +1,59 @@
+.project
+  text-align: center
+  min-height: 400px
+  position: relative
+  overflow: hidden
+
+  &.short
+    min-height: 320px
+
+  &.tall
+    min-height: 450px
+
+  div
+    position: absolute
+    left: 50%
+    top: 50%
+
+    &:before, &:after
+      display: block
+      content: ''
+      position: absolute
+
+body
+  display: flex
+  flex-wrap: wrap
+
+.project
+  width: 100%
+
+@media (max-width: 400px)
+
+  .project div:not(.no-scale)
+    transform: scale(.8)
+
+@media all and (min-width: 650px) and (max-width: 959px)
+
+  .project
+    width: 100%
+
+    &.fours,
+    &.six
+      width: 50%
+
+@media all and (min-width: 960px)
+
+  .project
+    width: 50%
+
+    &.wide
+      width: 100%
+
+    &.threes
+      width: 33.333%
+
+    &.fours
+      width: 25%
+
+    &.six
+      width: 33.333%

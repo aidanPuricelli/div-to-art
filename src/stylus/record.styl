@@ -1,0 +1,79 @@
+
+#record
+    background: rgb(236, 134, 134)
+
+    div
+        width: 400px
+        height: 300px
+        left: calc(50% - 200px)
+        margin-top: -(@height/2)
+        background-image: linear-gradient(to right, rgba(0,0,0,0) 70%, #18191A 70%),
+                        linear-gradient(to right, rgba(0,0,0,0) 70%, #333333 70%),
+                        linear-gradient(to right, rgba(0,0,0,0) 20%, #595959 20%),
+                        linear-gradient(to right, rgba(0,0,0,0) 70%, #595959 70%),
+                        linear-gradient(to right, rgba(0,0,0,0) 40%, #4c4c4c 40%),
+                        linear-gradient(to bottom, #DABC94 90%, #C49E78 10%)
+                    
+
+        background-size: 100px 40px, 55px 30px, 21px 10px, 40px 140px, 50px 15px, 400px 300px
+
+        background-position: 290px 10px, 335px 180px, 369px 210px, 350px 55px, 340px 50px, 0px 0px
+
+        background-repeat: no-repeat;
+
+
+        &:before
+            width: 350px
+            height: 250px
+            margin-left: -(@width/2)
+            left: 50%
+            top: 10px
+            border-radius: 50%
+            background-repeat: no-repeat
+            background: radial-gradient(ellipse 175px 125px at center, 
+                                      transparent 0%,
+                                      transparent 40%,
+                                      #18191A 40%,
+                                      #18191A 41%,
+                                      transparent 41%, 
+                                      transparent 50%, 
+                                      #18191A 50%, 
+                                      #18191A 51%, 
+                                      transparent 51%,
+                                      transparent 60%, 
+                                      #18191A 60%, 
+                                      #18191A 61%, 
+                                      transparent 61%,
+                                      transparent 70%,
+                                      #18191A 70%,
+                                      #18191A 71%,
+                                      transparent 71%,
+                                      transparent 80%,
+                                      #18191A 80%,
+                                      #18191A 81%,
+                                      transparent 81%,
+                                      transparent 90%,
+                                      #18191A 90%,
+                                      #18191A 91%,
+                                      transparent 91%,
+                                      transparent 100%,
+                                      #18191A 100%,
+                                      #18191A 100%),
+                        radial-gradient(circle at 100%, #333, #333 50%, #eee 75%, #333 75%),
+                        black
+            background-size: cover cover, 
+                            350px 250px,
+                            350px 250px
+
+            background-position: center -8px,
+                                -71.5px 0px,
+                                0px 0px
+
+        &:after
+            width: 100px
+            height: 70px
+            margin-left: -(@width/2)
+            left: 50%
+            top: 90px
+            border-radius: 50%
+            background: rgb(207, 207, 207)
