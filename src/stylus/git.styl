@@ -1,0 +1,46 @@
+#git 
+    background: rgb(39, 39, 98)
+
+
+    div
+        width: 350px
+        height: 350px;
+        background-image: linear-gradient(rgb(130, 130, 183), rgb(130, 130, 183)),
+                        radial-gradient(ellipse at center, rgb(130, 130, 183) 70%, rgba(0, 0, 0, 0) 30%),
+                        radial-gradient(ellipse at center, rgb(130, 130, 183) 70%, rgba(0, 0, 0, 0) 30%),
+                        radial-gradient(circle at center, rgb(39, 39, 98) 70%, rgba(0, 0, 0, 0) 30%), // ring
+                        radial-gradient(circle at center, rgb(130, 130, 183) 70%, rgba(0, 0, 0, 0) 30%) // outer
+        background-size: 100px 150px, 110px 140px, 205px 180px, 320px 320px, 350px 350px
+        background-position: 125px 260px, 120px 220px, 72.5px 70px, 15px 15px, 0px 0px
+        margin-top: -(@height/2)
+        left: calc(50% - 175px)
+        background-repeat: no-repeat
+        border-radius: 50%
+
+        &:before
+            width: 350px
+            height: 350px
+            margin-top: -(@height/2)
+            left: calc(50% - 175px)
+            background-repeat: no-repeat
+            border-radius: 50%
+            transform: rotate(30deg)
+            background-image: radial-gradient(ellipse at center, rgb(130, 130, 183) 70%, rgba(0, 0, 0, 0) 30%)
+            background-size: 50px 80px
+            background-position: 265px 190px
+        
+        &:after
+            width: 350px
+            height: 350px
+            margin-top: -(@height/2)
+            left: calc(50% - 175px)
+            background-repeat: no-repeat
+            border-radius: 50%
+            transform: rotate(150deg)
+            background-image: radial-gradient(ellipse at center, rgb(130, 130, 183) 70%, rgba(0, 0, 0, 0) 30%)
+            background-size: 50px 80px
+            background-position: 265px 80px
+
+
+
+        
